@@ -3,12 +3,12 @@ function sempreRetornaUm() {
 }
 
 function textoOuNumero(retornaTexto) {
-    return retornaTexto ? "" : 123;
-    //if(retornaTexto) {
-    //    return "Sou um texto!";
-    //} else {
-    //    return 123;
-    //}
+    //return retornaTexto ? "Sou um texto!" : 123;
+    if(retornaTexto) {
+        return "Sou um texto!";
+    } else {
+        return 123;
+    }
 }
 
 let valor = sempreRetornaUm() + 999;

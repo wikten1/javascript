@@ -6,4 +6,9 @@ function retornaUmaFuncao(){
     return bomDia;
 }
 
-retornaUmaFuncao()
+console.log(retornaUmaFuncao);
+console.log(retornaUmaFuncao());
+console.log(retornaUmaFuncao()());
+
+const umaFuncao = retornaUmaFuncao();
+console.log(umaFuncao());

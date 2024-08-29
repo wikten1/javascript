@@ -4,9 +4,18 @@
 const cursos = document.querySelectorAll('.curso');
 const arrayCursos = Array.from(cursos);
 
-const objetosCurso = arrayCursos.map((curso) => {
-  console.log(curso);
-}) 
+const objetos = arrayCursos.map((curso) => {
+  const titulo = curso.querySelector('h1').innerText;
+  const descricao = curso.querySelector('p').innerText
+  const aulas = curso.querySelector('.aulas').innerText
+  const horas = curso.querySelector('.horas').innerText
+  return {
+    titulo,
+    descricao,
+    aulas,
+    horas
+  }
+})
 
 
 console.log(arrayCursos);
@@ -24,7 +33,7 @@ const possuiBaixo = instrumentos.some((item) => {
   return item === 'Baixo';
 })
 
-console.log(possuiBaixo);
+console.log(possuiBaixo)
 
 // Retorne o valor total das compras
 const compras = [
